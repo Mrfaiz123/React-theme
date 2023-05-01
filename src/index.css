@@ -1,0 +1,203 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav{
+  background-color: #101130;
+  top: 0px;
+}
+.clock-container {
+  font-family: sans-serif;
+  background-image: linear-gradient(to right, #481066 , #F10068);
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  border-bottom: 2px solid #F10068;
+}
+
+.dropdown-content a {
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/*after ::before*/
+
+
+.single-btn button {
+  overflow: hidden;
+	transform: translate(-20%);
+	font-family: montserrat;
+	background: #F10068;
+}
+.single-btn button:before {
+	content: '';
+	position: absolute;
+	transition: .4s ease-in-out;
+	height: 100%;
+	background: #fff;
+	top: 0;
+	left: -100%;
+	width: 100%;
+}
+.single-btn button:hover:before {
+	left: 0;
+	z-index: -1;
+}
+.single-btn button span {
+	color: #fff;
+	transition: .4s ease-in-out;
+	z-index: 1;
+}
+.single-btn button:hover span {
+	color: #F10068;
+}
+
+.hero{
+  background-size: 100% 100%;
+  background-image:linear-gradient(to right, rgba(0, 0, 0, 0.73), rgba(0, 0, 0, 0.73)),url('./imges/hero.jpg');
+}
+.aboutside-div{
+  background-size: 100% 100%;
+  background-image:linear-gradient(to right, rgba(241, 241, 241, 0.73), rgba(255, 253, 253, 0.73)),url('./imges/cicule.png');
+}
+.about-h{
+    background: linear-gradient(to right, #481066 , #F10068);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.aboutdiv-right{
+  background-image: url('./imges/img\ \ 06.png');
+  background-size: 100% 100%;
+}
+.aboutdiv-mid{
+  border-radius: 50%;
+  background-image: url('./imges/img2.jpg');
+  background-size: 100% 100%;
+  border: 10px solid rgb(245, 239, 239);
+}
+.circule2{
+    animation-name: updown;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out; 
+}
+@keyframes updown{
+    0%{transform:rotate(360deg) }
+    25%{transform: translateY(-360deg);}
+    50%{transform: translateY(360deg);}
+    100%{transform: translateY(-360deg);}
+}
+.feature-div{
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.5);
+  transition-duration: 0.3s;
+
+}
+/*box-shadow: h-shadow v-shadow blur spread color inset;*/
+.feature-div:hover{
+  box-shadow: 4px 4px 5px 2px rgba(255, 255, 255, 0.5);
+}
+
+.icon{
+  transition: transform 0.3s ease;
+}
+.feature-div:hover .icon{
+  /*transform:scale(-1.5);*/
+  transform: rotate(360deg);
+}
+.number-icon{
+  transition: transform 0.8s ease;
+}
+.icons:hover .number-icon{
+  /*transform:scale(-1.5);*/
+  transform: rotatey(-360deg);
+}
+.footer-div{
+  transition: transform 0.8s ease;
+}
+.footer-div:hover {
+  transform: rotate(360deg);
+}
+.spring{
+  background-image: url('./imges/img\ \ 09.png');
+  background-size: 100% 100%;
+}
+.spring1{
+  background-image: url('./imges/img\ \ 11.png');
+  background-size: 100% 100%;
+}
+.spring2{
+  background-image: url('./imges/img\ \ 10.png');
+  background-size: 100% 100%;
+}
+.speakers{
+  background-image:linear-gradient(to right, rgba(5, 73, 161, 0.73), rgba(5, 73, 161, 0.73)),url('./imges/img\ \ 12.jpg');
+  background-size: 100% 100%;
+}
+.Speaker-circule{
+  border: 10px solid whitesmoke;
+  box-shadow: 2px 10px 10px 5px rgba(36, 35, 35, 0.5);
+}
+.Speaker-circule:hover{
+  box-shadow: 2px 10px 10px 5px rgba(28, 130, 214, 0.5);
+}
+.Speaker-circule-img{
+  transition-duration: 0.6s;
+}
+.Speaker-circule:hover .Speaker-circule-img{
+  transform: scale(1.1);
+ 
+}
+.mid{
+  transition-duration: 0.5s;
+  background-color: #ff006fd5;
+  z-index: 2;
+}
+.Speaker-circule:hover .mid{
+  transform: translateX(100%);
+  z-index: 2;
+}
+
+.register{
+  background-image: url('./imges/mid.png');
+  background-size: 100% 100%;
+}
+.footer{
+  background-image: url('./imges/footer.jpg');
+  background-size: 100% 100%;
+}
+.card:hover{
+  box-shadow: 2px 10px 10px 5px rgba(242, 246, 248, 0.5);
+}
+.vd{
+  background-image:linear-gradient(to right, #69345dce, #dd2374b6),url('../public/image/video.jpg');
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+.blog{
+  overflow: hidden;
+}
