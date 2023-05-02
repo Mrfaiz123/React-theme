@@ -2,7 +2,15 @@ import React from "react";
 import {BiUser} from 'react-icons/bi'
 import {FaRegComments} from 'react-icons/fa'
 import img3 from '../imges/circul2.png'
+import New from '../imges/news-1.jpg'
+import New1 from '../imges/news-2.jpg'
+import New2 from '../imges/news-3.jpg'
+import img09 from '../imges/img09.png'
+import img10 from '../imges/img10.png'
+import img11 from '../imges/img11.png'
 
+
+//news-1.jpg
 function Blogs(){
 
     return(
@@ -14,20 +22,20 @@ function Blogs(){
         <h1 class="text-gray-900 text-[42px] title-font font-bold mb-[10vh] mt-4">Latest News</h1>
 
         <div className="h-[73px] w-[70px] -mx-[4vw]  absolute">
-          <img src="/image/twist-line-1.png"/>
+          <img src={img09}/>
         </div>
         <div className="h-[73px] w-[70px] -my-[29vh] -mx-[6vw] absolute">
-          <img src="/image/twist-line-2.png"/>
+          <img src={img10}/>
         </div>
         <div className="h-[73px] w-[70px] -my-[35vh] mx-[10vw]  absolute">
-          <img src="/image/twist-line-3.png"/>
+          <img src={img11}/>
         </div>
 
     <div class="flex sm:-m-4 -mx-4 -mb-10 -mt-4 pl-4  ">
       
     <div class=" crd lg:w-[28vw] border m-4 md:w-1/3 sm:mb-0 mb-6">
         <div class="h-58 overflow-hidden">
-          <img alt="content" class="object-cover object-center h-full w-full" src="/image/news-1.jpg"/>
+          <img alt="content" class="object-cover object-center h-full w-full" src={New}/>
         </div>
         <div className='flex  leading-10 font-medium mt-4  items-center text-start ml-[2vw]' >
                 <h1 className="text-[#1d95d2] pr-2  text-[18px]  "><BiUser/></h1>
@@ -43,7 +51,7 @@ function Blogs(){
 
       <div class="border lg:w-[28vw] m-4 md:w-1/3 sm:mb-0 mb-6">
         <div class="h-58 overflow-hidden">
-          <img alt="content" class="object-cover object-center h-full w-full" src="/image/news-2.jpg"/>
+          <img alt="content" class="object-cover object-center h-full w-full" src={New1}/>
         </div>
         <div className='flex  leading-10 font-medium mt-4  items-center text-start ml-[2vw]' >
                 <h1 className="text-[#1d95d2] pr-2  text-[18px]  "><BiUser/></h1>
@@ -58,7 +66,7 @@ function Blogs(){
 
       <div class="border lg:w-[28vw] m-4 md:w-1/3 sm:mb-0 mb-6 ">
         <div class=" h-58 overflow-hidden">
-          <img alt="content" class="object-cover object-center h-full w-full" src="/image/news-3.jpg"/>
+          <img alt="content" class="object-cover object-center h-full w-full" src={New2}/>
         </div>
         <div className='flex  leading-10 font-medium mt-4  items-center text-start ml-[2vw]' >
                 <h1 className="text-[#1d95d2] pr-2  text-[18px]  "><BiUser/></h1>

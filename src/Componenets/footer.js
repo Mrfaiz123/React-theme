@@ -13,6 +13,13 @@ import {IoEarthOutline} from 'react-icons/io5'
 
 
 import logo1 from '../imges/logo.png'
+import foot1 from '../imges/footer1.jpg'
+import foot2 from '../imges/footer2.jpg'
+import foot3 from '../imges/footer3.jpg'
+import foot4 from '../imges/footer4.jpg'
+import foot5 from '../imges/footer5.jpg'
+import foot6 from '../imges/footer6.jpg'
+
 
 function Footer() {
     return (
@@ -83,12 +90,12 @@ function Footer() {
                     <h1 className="text-white font-bold text-2xl">Instagram Gallery</h1>
                     <div className="h-[2px] w-[15%] bg-pink-700 mt-2"></div>
                     <div className="h-[27vh] w-[100%] mt-6  justify-between flex flex-wrap">
-                        <img className="h-[12vh] w-[7vw] " src="/image/footer1.jpg"/>
-                        <img className="h-[12vh] w-[7vw] " src="/image/footer2.jpg"/>
-                        <img className="h-[12vh] w-[7vw] " src="/image/footer3.jpg"/>
-                        <img className="h-[12vh] w-[7vw] " src="/image/footer4.jpg"/>
-                        <img className="h-[12vh] w-[7vw] " src="/image/footer5.jpg"/>
-                        <img className="h-[12vh] w-[7vw] " src="/image/footer6.jpg"/>
+                        <img className="h-[12vh] w-[7vw] " src={foot1}/>
+                        <img className="h-[12vh] w-[7vw] " src={foot2}/>
+                        <img className="h-[12vh] w-[7vw] " src={foot3}/>
+                        <img className="h-[12vh] w-[7vw] " src={foot4}/>
+                        <img className="h-[12vh] w-[7vw] " src={foot5}/>
+                        <img className="h-[12vh] w-[7vw] " src={foot6}/>
                         {/*src="/image/news-2.jpg"*/}
                     </div>
                 </div>

@@ -143,15 +143,15 @@ code {
   transform: rotate(360deg);
 }
 .spring{
-  background-image: url('./imges/img\ \ 09.png');
+  background-image: url('./imges/img09.png');
   background-size: 100% 100%;
 }
 .spring1{
-  background-image: url('./imges/img\ \ 11.png');
+  background-image: url('./imges/img11.png');
   background-size: 100% 100%;
 }
 .spring2{
-  background-image: url('./imges/img\ \ 10.png');
+  background-image: url('./imges/img10.png');
   background-size: 100% 100%;
 }
 .speakers{
